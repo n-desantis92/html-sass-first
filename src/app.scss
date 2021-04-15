@@ -5,6 +5,10 @@ $bgsecondary:	#FF00FF;
 $bgtrz: #8a6642;
 $colText: black;
 $ombra1: 2px 2px 3px 1px rgba(0,0,0,0.5);
+$font1: 13px;
+$font2: 18px;
+$font3: 70px;
+
 
 * {
   margin: 0;
@@ -28,8 +32,8 @@ header {
 
 h1 {
   color: $color-title;
-  margin-left: 20px
-
+  margin-left: 20px;
+  font-size: $font3;
 }
 
 button {
@@ -48,6 +52,7 @@ main {
   justify-content: center;
   align-items: center;
   color: $color-title;
+  font-size: $font2;
 }
 
 main p {
@@ -61,4 +66,16 @@ footer {
 width: $maxlarg;
 height: 100px;
 background-color: $bgprimary;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+footer button {
+  margin-left: 20px;
+}
+
+footer p {
+  color: $color-title;
+  margin-right: 20px;
+  font-size: $font1;
 }
